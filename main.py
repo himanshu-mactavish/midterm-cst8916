@@ -4,7 +4,9 @@ from pydantic import BaseModel
 app = FastAPI()
 
 # In-memory database (a list of student dictionaries)
-students = []
+students = [
+    {"id": 1, "name": "Himanshu", "grade": "B"},
+]
 
 # Pydantic model for Student data
 class Student(BaseModel):
